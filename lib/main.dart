@@ -20,8 +20,9 @@ class MyApp extends StatelessWidget {
 
       return MaterialApp(
         title: 'Music Stream',
-        theme: ThemeData(
-          primarySwatch: Colors.blue,
+          debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+          primarySwatch: Colors.amber,
         ),
         home: RootPage(auth: Auth())
       );
