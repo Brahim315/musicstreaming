@@ -17,18 +17,18 @@ class HomePage extends StatelessWidget {
 
   @override
     Widget build(BuildContext context) {
-      return new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Welcome'),
+      return Scaffold(
+        appBar: AppBar(
+          title: const Text('Welcome'),
           actions: <Widget>[
-            new TextButton(
-                child: new Text('Logout', style: new TextStyle(fontSize: 17.0,color: Colors.black)),
-                onPressed: _signOut)
+            TextButton(
+                onPressed: _signOut,
+                child: const Text('Logout', style: TextStyle(fontSize: 17.0,color: Colors.black)))
           ],
         ),
-        body: new Container(
-          child: new Center(
-            child: new Text('Welcome to homepage',style: new TextStyle(fontSize: 32.0))
+        body: Container(
+          child: const Center(
+            child: Text('Welcome to homepage',style: TextStyle(fontSize: 32.0))
           ),
         )
       );
